@@ -30,7 +30,7 @@ app.post("/signup",function(req,res){
     //https request using this option object what kind of request in this case post and also for accesing we need key that is the api key
     const options={
         method:"POST",
-        auth:procces.env.API_KEY,
+        auth:process.env.API_KEY,
     }
     const url="https://us21.api.mailchimp.com/3.0/lists/843903887f";
     const request=https.request(url,options,function(response){
